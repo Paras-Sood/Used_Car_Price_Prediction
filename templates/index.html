@@ -55,15 +55,18 @@
             margin-top: 0;
         }
         #select_option{
-            width: auto;
-            margin: auto;
-        }
-        #column1_selector{
-            float: right;
-            margin-right: 10px;
+            text-align: center;
+            margin: 10px 0;
         }
         #output{
             display: none;
+        }
+        #output h2{
+            min-width: 460px;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            padding: 10px;
         }
     </style>
     <script>
@@ -71,6 +74,8 @@
             addgraph('year')
             document.querySelector('#column1_selector').onchange = function(){addgraph(this.value)}
             document.querySelector('form').onsubmit = function(){
+                document.querySelector('#output').style.display='block'
+                document.querySelector('#output h2').innerHTML="Loading..."
                 fetch('/predict',{
                     method:'POST',
                     credentials: "include",
@@ -90,7 +95,9 @@
                     })
                 })
                 .then(response=>response.json())
-                .then(response=>console.log(response));
+                .then(response=>{
+                    document.querySelector('#output h2').innerHTML=`The predicted price is ${response.Price}`
+                });
                 return false
             }
         })
@@ -100,14 +107,10 @@
             .then(response=>{
                 let xValues=[]
                 let yValues=[]
-                console.log(response)
-                // let dt=response.data
-                for(let i=0;i<response.length;i++){
-                    xValues.push(response[i][0])
-                    yValues.push(response[i][1])
-                }
-                console.log(xValues)
-                // /*
+                response.forEach(ele => {
+                    xValues.push(ele[0])
+                    yValues.push(ele[1])
+                });
                 document.querySelector('#graph_div').innerHTML=""
                 let canvas=document.createElement('canvas')
                 canvas.id="graph"
@@ -145,7 +148,6 @@
                         }
                     }
                 })
-                // */
             })
         }
     </script>
@@ -168,7 +170,6 @@
                     <option value="toyota">Toyota</option>
                     <option value="vauxhall">Vauxhall</option>
                     <option value="vw">VW</option>
-                    <option value="other">Other</option>
                 </select>
                 <input type="number" placeholder="Year Manufactured" id="year" min="1980" max="2021" required>
                 <select name="transmission" id="transmission">
@@ -207,6 +208,7 @@
             <option value="fuelType">Fuel Type</option>
             <option value="engineSize">Engine Size</option>
         </select>
+        <span style="font-size: large;font-weight: bold;">V/S Price</span>
     </div>
     <div id="graph_div" style="width: 80%;margin: 20px auto;"></div>
 </body>
