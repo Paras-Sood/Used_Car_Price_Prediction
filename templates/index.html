@@ -96,7 +96,7 @@
                 })
                 .then(response=>response.json())
                 .then(response=>{
-                    document.querySelector('#output h2').innerHTML=`The predicted price is ${response.Price}`
+                    document.querySelector('#output h2').innerHTML=`The predicted price is $ ${response.Price}`
                 });
                 return false
             }
