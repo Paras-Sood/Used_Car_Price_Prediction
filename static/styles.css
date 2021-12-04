@@ -92,6 +92,7 @@ footer div span p{
     }
     #output h2{
         font-size: 26px;
+        min-width: 420px;
     }
     #graph_div{
         width: 95%;
@@ -113,7 +114,7 @@ footer div span p{
     #output h2{
         font-size: 20px;
         min-width: 250px;
-        max-width: 350px;
+        max-width: 310px;
     }
     #graph_div{
         width: 93%;
