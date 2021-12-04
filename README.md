@@ -1,5 +1,6 @@
 # Used_Car_Price_Prediction
 Predicts the price of a used car, provided data like Brand, Year of Manufacture etc.
+> Website is live on __[http://paras-sood-101916051-dsproject.azurewebsites.net](http://paras-sood-101916051-dsproject.azurewebsites.net)__
 
 ## Requirements
 All the requirements have been mentioned in __requirements.txt__ file.
@@ -21,6 +22,7 @@ The dataset was taken from [here](https://www.kaggle.com/kukuroo3/used-car-price
 ## How to run
 - Open terminal
 - cd to the directory where this code is present
+- Install requirements
 - Run _"__flask run__"_
 - Open Browser(Preferably Google Chrome)
 - Go to http://127.0.0.1:5000 (most probably) (This link will be shown to you in the terminal)
