@@ -1,6 +1,10 @@
 # Used_Car_Price_Prediction
 Predicts the price of a used car, provided data like Brand, Year of Manufacture etc.
 
+## Requirements
+All the requirements have been mentioned in __requirements.txt__ file.
+> Use command _"__pip install -r requirements.txt__"_ to install all requirements present in requirements file.
+
 ## Dataset
 The dataset was taken from [here](https://www.kaggle.com/kukuroo3/used-car-price-dataset-competition-format). It is also present in this repo (X_train, X_test, y_train, y_test).
 
