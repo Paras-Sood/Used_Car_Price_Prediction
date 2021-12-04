@@ -19,7 +19,7 @@ def predict():
     X_train=pd.read_csv('X_train.csv')
     df.fillna(X_train.mean(),inplace=True)
     price=predict_price(df)
-    return jsonify({"Price":price})
+    return jsonify({"Price":round(price,2)})
 
 def set_type(a):
     if type(a)==np.int64:
