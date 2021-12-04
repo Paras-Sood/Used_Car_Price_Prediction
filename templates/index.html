@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/styles.css">
     <script src="../static/index.js"></script>
     <title>Used Car Price Prediction</title>
@@ -46,7 +47,7 @@
                 <input type="number" placeholder="MPG" id="mpg" step="0.01" min="0">
                 <input type="number" placeholder="Engine Size" id="eng_size" step="0.01" min="0" max="10">
                 <div>
-                    <input type="submit" value="Predict Price" id="submit">
+                    <input type="submit" value="Predict Price" id="submit" class="btn btn-med btn-primary">
                 </div>
             </form>
         </div>
@@ -55,7 +56,7 @@
         </div>
     </div>
     <div class="header">
-        <h1 style="width: 450px;">Data Visualization</h1>
+        <h1>Data Visualization</h1>
     </div>
     <div id="select_option">
         <select name="column1_selector" id="column1_selector">

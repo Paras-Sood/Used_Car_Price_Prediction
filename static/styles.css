@@ -14,23 +14,18 @@ input,select{
     border-radius: 4px;
 }
 h1{
-    margin: auto;
     color: white;
-    width: 650px;
     font-size: 52px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .header{
     background-color: black;
     padding: 10px;
+    text-align: center;
 }
 #submit{
-    cursor: pointer;
     float: right;
-}
-#submit:hover{
-    background-color: rgb(175, 175, 175);
+    font-weight: bold;
 }
 h2{
     color: red;
@@ -62,14 +57,13 @@ h2{
 footer{
     background-color: black;
     color: white;
-    height: 100px;
+    min-height: 100px;
     margin-top: 100px;
 }
 footer div{
     padding-top: 10px;
     display: flex;
     justify-content: center;
-    font-size: large;
 }
 footer div span{
     display: flex;
@@ -77,22 +71,24 @@ footer div span{
     font-weight: bold;
     margin: 0 10px;
 }
+footer div span p{
+    margin-bottom: 5px;
+}
 #graph_div{
     width: 80%;
     margin: 20px auto;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     form{
-        width: 400px;
+        width: 480px;
         margin: 10px auto;
     }
     h1{
         font-size: 36px;
-        width: 450px;
     }
     #main{
-        background-size: 900px 600px;
-        min-height: 600px;
+        background-size: 900px 650px;
+        min-height: 650px;
     }
     #output h2{
         font-size: 26px;
@@ -100,5 +96,32 @@ footer div span{
     #graph_div{
         width: 95%;
         margin: 10px auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    form{
+        width: 320px;
+        margin: 8px auto;
+    }
+    h1{
+        font-size: 28px;
+    }
+    #main{
+        background-size: 700px 500px;
+        min-height: 500px;
+    }
+    #output h2{
+        font-size: 20px;
+        min-width: 250px;
+        max-width: 350px;
+    }
+    #graph_div{
+        width: 93%;
+        margin: 8px auto;
+    }
+    input,select{
+        font-size: 15px;
+        margin: 5px;
+        padding: 3px;
     }
 }
