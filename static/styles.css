@@ -48,7 +48,7 @@ h2{
     display: none;
 }
 #output h2{
-    min-width: 460px;
+    min-width: 500px;
     background-color: black;
     color: white;
     border-radius: 8px;
