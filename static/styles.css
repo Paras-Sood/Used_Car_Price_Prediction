@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    width: 600px;
+    margin: 50px auto;
+}
+input,select{
+    font-size: 18px;
+    margin: 8px;
+    padding: 4px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+h1{
+    margin: auto;
+    color: white;
+    width: 650px;
+    font-size: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.header{
+    background-color: black;
+    padding: 10px;
+}
+#submit{
+    cursor: pointer;
+    float: right;
+}
+#submit:hover{
+    background-color: rgb(175, 175, 175);
+}
+h2{
+    color: red;
+    width: 400px;
+    margin: auto;
+    font-size: 32px;
+}
+#main{
+    background:url(../static/car.png);
+    background-size: 100% 100%;
+    min-height: 800px;
+    background-size: cover;
+    margin-top: 0;
+}
+#select_option{
+    text-align: center;
+    margin: 10px 0;
+}
+#output{
+    display: none;
+}
+#output h2{
+    min-width: 460px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-top: 100px;
+}
+footer div{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+footer div span{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin: 0 10px;
+}
+#graph_div{
+    width: 80%;
+    margin: 20px auto;
+}
+@media screen and (max-width: 650px) {
+    form{
+        width: 400px;
+        margin: 10px auto;
+    }
+    h1{
+        font-size: 36px;
+        width: 450px;
+    }
+    #main{
+        background-size: 900px 600px;
+        min-height: 600px;
+    }
+    #output h2{
+        font-size: 26px;
+    }
+    #graph_div{
+        width: 95%;
+        margin: 10px auto;
+    }
+}
