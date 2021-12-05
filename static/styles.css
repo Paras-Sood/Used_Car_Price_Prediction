@@ -48,7 +48,7 @@ h2{
     display: none;
 }
 #output h2{
-    min-width: 500px;
+    min-width: 520px;
     background-color: black;
     color: white;
     border-radius: 8px;
@@ -114,7 +114,7 @@ footer div span p{
     #output h2{
         font-size: 20px;
         min-width: 250px;
-        max-width: 310px;
+        max-width: 330px;
     }
     #graph_div{
         width: 93%;
