@@ -1,6 +1,6 @@
 # Used_Car_Price_Prediction
 Predicts the price of a used car, provided data like Brand, Year of Manufacture etc.
-> Website is live on __[http://paras-sood-101916051-dsproject.azurewebsites.net](http://paras-sood-101916051-dsproject.azurewebsites.net)__
+<!-- > Website is live on __[http://paras-sood-101916051-dsproject.azurewebsites.net](http://paras-sood-101916051-dsproject.azurewebsites.net)__  -  Not live now-->
 
 ## Requirements
 All the requirements have been mentioned in __requirements.txt__ file.
