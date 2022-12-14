@@ -1,6 +1,6 @@
 # Used_Car_Price_Prediction
 Predicts the price of a used car, provided data like Brand, Year of Manufacture etc.
-<!-- > Website is live on __[http://paras-sood-101916051-dsproject.azurewebsites.net](http://paras-sood-101916051-dsproject.azurewebsites.net)__  -  Not live now-->
+> Live link - __[http://paras29sood.pythonanywhere.com/](http://paras29sood.pythonanywhere.com/)__
 
 ## Requirements
 All the requirements have been mentioned in __requirements.txt__ file.
@@ -19,7 +19,7 @@ The dataset was taken from [here](https://www.kaggle.com/kukuroo3/used-car-price
 ## Getting predicted price
 ![output](/static/output.jpg)
 
-## How to run
+## How to run locally
 - Open terminal
 - cd to the directory where this code is present
 - Install requirements
